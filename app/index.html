@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CGA Projekt</title>
+        <link rel="stylesheet" href="https://use.typekit.net/bew3ycj.css">
+    </head>
+    <body style="margin:0; overflow:hidden">
+
+        <style>
+            #overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: radial-gradient(#74b280, #35b24e);
+            }
+
+            #overlay > div {
+                color: #EEEEEE;
+                font-size: 14px;
+                text-align: center;
+                line-height: 1.5;
+                font-family: "Open Sans";
+                margin-bottom: 10%;
+            }
+
+            #overlay > div > button {
+                border: 0px;
+                height: 20px;
+                color: #ffffff;
+                background: transparent;
+                outline: 1px solid #ffffff;
+                cursor: pointer;
+            }
+
+            img {
+
+            }
+        </style>
+
+        <div id="overlay">
+            <div>
+                <img src="src/images/princess.png" height="300">
+                <h3>Hol dir den Schlüssel und rette die Prinzessin!</h3>
+                <p>Oh nein, die Prinzessin wurde in einem dunklen Verlies eingesperrt. Rette sie, indem du dir den gut bewachten Schlüssel für das Verlies holst! </p>
+                <p> <br> Das Tor zur Burg lässt sich meistens sehr einfach öffnen, versuche es anzuklicken. <br>
+                   Aber vorsicht! Wenn sie einen Eindringling bemerken, kann es schnell ungemütlich für dich werden ...
+                </p>
+                <p>Benutze die Pfeiltasten deiner Tastatur, um den Mörser zu drehen oder vorwärts zu bewegen. <br>
+                Starte einen Angriff mit der Leertaste. </p>
+
+                <button id="startButton" >LOS GEHT'S!</button>
+
+            </div>
+        </div>
+
+        <div id="3d_content"></div>
+        <script src="src/main.js"></script>
+
+    </body>
+</html>
